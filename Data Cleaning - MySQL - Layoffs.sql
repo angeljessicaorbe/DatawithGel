@@ -149,7 +149,7 @@ UPDATE layoffs_staging2
 SET industry = 'Other'
 WHERE industry LIKE '';
 
--- Delete entries that has missing values for laid off and percentage laid off
+-- 4. Delete entries that has missing values for laid off and percentage laid off
 DELETE
 FROM layoffs_staging2
 WHERE total_laid_off = ''
