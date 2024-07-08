@@ -4,8 +4,8 @@
 SELECT *
 FROM layoffs;
 
--- First thing we want to do is create a staging table. 
--- This is the one we will work in and clean the data. We want a table with the raw data in case something happens
+-- First thing i want to do is create a staging table. 
+-- This is the one i will work in and clean the data. I want a table with the raw data in case something happens
 CREATE TABLE layoffs_staging 
 LIKE layoffs;
 
@@ -16,7 +16,7 @@ FROM layoffs;
 SELECT *
 FROM layoffs_staging;
 
--- Now when we are data cleaning we usually follow a few steps
+-- Now I'm going to follow a few steps in order to clean the data:
 -- 1. Check if there's a duplicates and remove any
 -- 2. Standardize data and fix errors
 -- 3. Look at null values and see what to do with them
